@@ -1,0 +1,337 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+
+}
+
+/* STYLE OF CABECERA */
+header {
+    position: relative;
+    background-color: white;
+    border-bottom: 5px solid transparent;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 13px 20px;
+}
+
+.logo_brevas img {
+    height: 50px;
+}
+
+.logo_brevas {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections a {
+    text-decoration: none;
+    margin-right: 5px;
+    padding: 13px 10px;
+    border: unset;
+    border-radius: 15px;
+    color: #5a5b5b;
+    z-index: 1;
+    position: relative;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: all 250ms;
+    overflow: hidden;
+}
+  
+.sections a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #FF69B4;
+    z-index: -1;
+    box-shadow: 16px 16px 19px -3px #32CD32;
+    transition: all 400ms
+}
+  
+.sections a:hover {
+    color: #ffffff;
+}
+  
+.sections a:hover::before {
+    width: 100%;
+}
+
+header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #FF69B4 30%, #32CD32 30%);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* STYLE OF MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* BASE STYLE FOR CARDS */
+.card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    margin: 20px 0;
+}
+
+/* SPECIFIC STYLES FOR CARD ONE */
+.cardOne {
+    display: flex;
+}
+
+.cardContent {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.cardContent h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.cardContent p {
+    margin-top: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cardImage {
+    flex: 1;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SPECIFIC STYLES FOR CARD TWO */
+
+.cardTwo {
+    position: relative;
+    height: 400px; 
+    background: url('../img/imagenBrevas2.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardOverlay {
+    width: 70%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.cardTwo h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.cardTwo p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* SPECIFIC STYLES FOR CARD THREE */
+
+.cardThree {
+    display: flex;
+}
+
+.cardThree .cardImage {
+    order: 1;
+}
+
+.cardThree .cardContent {
+    order: 2;
+}
+
+/* STYLE OF FOOTER */
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+.box__footer .logo img {
+    width: 180px;
+
+}
+
+.box__footer .terms{
+    max-width: 300px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: none ;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+/* BREAKPOINS  */
+
+/* Estilos para el botón de menú hamburguesa */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    
+    .sections {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 10;
+    }
+    
+    .sections a {
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .sections.show {
+        display: flex;
+    }
+}
+
+/* Media queries para las tarjetas */
+@media (max-width: 768px) {
+    .cardOne, .cardThree {
+        flex-direction: column;
+    }
+
+    .cardImage, .cardContent {
+        width: 100%;
+        height: auto;
+    }
+
+    .cardTwo {
+        height: 300px;
+    }
+
+    .cardOverlay {
+        width: 95%;
+        height: 95%;
+    }
+
+    .cardContent {
+        padding: 10px;
+    }
+
+    .cardContent h2, .cardContent p, .cardTwo h2, .cardTwo p {
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: center;
+    }
+}
