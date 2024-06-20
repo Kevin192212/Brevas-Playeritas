@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Brevas Playeritas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/productosStyle.css">
+    <link rel="stylesheet" href="../css/whatsappStyle.css">
+    <link rel="icon" href="../img/logo brevas_transparent_superior.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Paytone+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/deb04db862.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- WHATSAPP BUTTON -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=573227674220&text=Hola!%20Este%20es%20el%20chat%20de%20Brevas%20Plaeritas,%20deja%20tu%20mensaje" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- HEAD -->
+    <header id="mi-header">
+        <nav>
+            <div class="logo_brevas">
+                <a href="../index.html"><img src="../img/logo brevas.jpg" alt="logo"></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="sections" id="nav-menu">
+                <a href="../index.html">Inicio</a>
+                <a href="#">Equipo</a>
+                <a href="#">Noticias</a>
+                <a href="#">Galería</a>
+                <a href="#">Documentos</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BODY -->
+
+    <div class="container">
+        <div class="header">PRODUCTOS BREVAS PLAYERITAS</div>
+        <div class="subheader">¡SABOR TRADICIONAL QUE TE ENAMORA UNA Y OTRA VEZ!</div>
+        <div class="subheaderText">Aquí podrás conocer nuestras exquisitas brevas y arequipes, en sus diversas presentaciones y sabores incomparables. ¡Descubre un universo de dulzura con los productos de Brevas Playeritas!</div>
+        <div class="products">
+            <div class="product">
+                <a href="arequipes.html"><img src="../img/producto.png" alt="Jet Caramel"></a>
+                <div class="product-title"><a href="arequipes.html">AREQUIPES</a></div>
+                <div class="product-description">Disfruta de la pureza y suavidad de nuestro arequipe, elaborado con los mejores ingredientes. ¡Descubre la esencia de Brevas Playeritas en cada bocado!</div>
+            </div>
+            <div class="product">
+                <a href=""><img src="../img/producto.png" alt="Jet Fresas con Crema"></a>
+                <div class="product-title"><a href="">BREVAS</a></div>
+                <div class="product-description">Disfruta de la pureza y suavidad de nuestro arequipe, elaborado con los mejores ingredientes. ¡Descubre la esencia de Brevas Playeritas en cada bocado!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div id="productos-footer"></div>
+
+    <script>
+        $(function(){
+            $("#productos-footer").load("footer.html #mi-footer", function() {
+                // Ejecutar cualquier script que dependa del contenido cargado
+                const menuIcon = document.getElementById('menu-icon');
+                const navMenu = document.getElementById('nav-menu');
+                
+                menuIcon.addEventListener('click', function() {
+                    navMenu.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
