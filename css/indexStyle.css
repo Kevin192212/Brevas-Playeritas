@@ -1,0 +1,173 @@
+/* STYLE OF MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* BASE STYLE FOR CARDS */
+.card {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    margin: 20px 0;
+}
+
+/* SPECIFIC STYLES FOR CARD ONE */
+.cardOne {
+    display: flex;
+}
+
+.cardContent {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.cardContent h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.cardContent p {
+    margin-top: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cardImage {
+    flex: 1;
+}
+
+.cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SPECIFIC STYLES FOR CARD TWO */
+
+.cardTwo {
+    position: relative;
+    height: 400px; 
+    background: url('../img/imagenBrevas2.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardOverlay {
+    width: 70%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.cardTwo h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.cardTwo p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* SPECIFIC STYLES FOR CARD THREE */
+
+.cardThree {
+    display: flex;
+}
+
+.cardThree .cardImage {
+    order: 1;
+}
+
+.cardThree .cardContent {
+    order: 2;
+}
+
+/* ANIMATIONS */
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.card {
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+footer .box__footer{
+    view-timeline-name: --card;
+    view-timeline-axis: block;
+
+    animation-timeline: --card;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+/* Media queries para las tarjetas */
+@media (max-width: 768px) {
+    .cardOne, .cardThree {
+        flex-direction: column;
+    }
+
+    .cardImage, .cardContent {
+        width: 100%;
+        height: auto;
+    }
+
+    .cardTwo {
+        height: 300px;
+    }
+
+    .cardOverlay {
+        width: 95%;
+        height: 95%;
+    }
+
+    .cardContent {
+        padding: 10px;
+    }
+
+    .cardContent h2, .cardContent p, .cardTwo h2, .cardTwo p {
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: center;
+    }
+}
