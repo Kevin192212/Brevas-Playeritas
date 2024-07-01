@@ -1,0 +1,48 @@
+.team-section {
+    text-align: center;
+    padding: 0px 20px 50px 20px;
+}
+
+.team-section h2 {
+    font-family: "Paytone One", sans-serif;
+    font-size: 2em;
+    margin: 15px;
+    color: #343434;
+}
+
+.team-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.team-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.team-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries para hacer responsive */
+@media (min-width: 768px) {
+    .team-images {
+        flex-direction: row; /* Volver a alinear horizontalmente en pantallas más grandes */
+        justify-content: center;
+    }
+
+    .team-images img {
+        margin-bottom: 0; /* Eliminar el margen inferior para mantener la alineación horizontal */
+    }
+}

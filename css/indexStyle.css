@@ -1,4 +1,11 @@
 /* STYLE OF MAIN */
+h1{
+    font-family: "Paytone One", sans-serif;
+    font-size: 2em;
+    margin: 15px;
+    color: #343434;
+}
+
 main {
     display: flex;
     flex-direction: column;

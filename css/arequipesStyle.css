@@ -1,3 +1,5 @@
+/* STYLE OF MAIN */
+
 .general-container h1 {
     text-align: center;
     font-size: 2em;
@@ -20,14 +22,14 @@
 
 .product-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap; /* Permitir el ajuste de fila */
     margin-bottom: 25px; /* Añadido para separar las filas */
 }
 
 .product {
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     text-align: center;
@@ -170,15 +172,7 @@
     border-radius: 10px;
 }
 
-/* MEDIA QUERIS */
-
-@media (max-width: 1200px) {
-    .product-row {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
+/* BREAKPOINS */
 
 @media (max-width: 768px) {
     .product-row {

@@ -1,0 +1,71 @@
+.news-section {
+    text-align: center;
+    padding: 0px 20px 40px 20px;
+}
+
+.news-section h2 {
+    font-family: "Paytone One", sans-serif;
+    font-size: 2em;
+    margin: 15px;
+    color: #343434;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.news-item {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.news-item h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin: 15px 0;
+}
+
+.news-item p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.news-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.news-images img {
+    width: 50%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+/* Efecto hover en la tarjeta */
+.news-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .news-container {
+        width: 90%;
+    }
+    
+    .news-item {
+        width: calc(100% - 40px);
+    }
+}
