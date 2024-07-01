@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Brevas Playeritas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/noticiasStyle.css">
+    <link rel="stylesheet" href="../css/whatsappStyle.css">
+    <link rel="icon" href="../img/logo brevas_transparent_superior.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Paytone+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/deb04db862.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- WHATSAPP BUTTON -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=573227674220&text=Hola!%20Este%20es%20el%20chat%20de%20Brevas%20Plaeritas,%20deja%20tu%20mensaje" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- HEAD -->
+    <header id="mi-header">
+        <nav>
+            <div class="logo_brevas">
+                <a href="../index.html"><img src="../img/logo brevas.jpg" alt="logo"></a>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="sections" id="nav-menu">
+                <a href="../index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="">Galería</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BODY -->
+    <div class="news-section">
+        <h2>Noticias</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <h2>Participacion Mercado Campesino en La Playa</h2>
+                <p>En un emotivo evento realizado este 2022, la asociación de mujeres emprendedoras Brevas Playeritas celebró con éxito su participación en el mercado campesino en La Playa, gracias al apoyo clave de la administración municipal y la Fundación Catatumbo. <br> El mercado, que destacó por su enfoque en productos orgánicos provenientes directamente de campesinos locales, permitió a Brevas Playeritas mostrar su amplia gama de exquisitos arequipes, brevas y panelitas. Estos productos, elaborados con ingredientes naturales de la región, captaron la atención de los asistentes por su sabor auténtico y su compromiso con la calidad. <br><br> "Estamos muy agradecidas por el respaldo recibido de la administración municipal y la Fundación Catatumbo, quienes creyeron en nuestro proyecto desde el inicio", expresó una de las integrantes de Brevas Playeritas. "Este mercado no solo nos permitió fortalecer nuestro posicionamiento en La Playa, sino también apoyar a nuestros queridos campesinos, promoviendo la economía local y la sostenibilidad ambiental". <br><br>El evento no solo fue una oportunidad para impulsar la economía local, sino también para consolidar el compromiso de Brevas Playeritas con la comunidad, ofreciendo productos que no solo endulzan la vida, sino que también contribuyen al desarrollo regional.</p>
+                    <div class="news-images">
+                        <img src="../img/notice1img1.jpeg" alt="Noticia 1 Imagen 1">
+                        <img src="../img/imagenBrevas3.jpg" alt="Noticia 1 Imagen 2">
+                    </div>
+            </div>
+            <div class="news-item">
+                <h2>Entrega de equipo: Unidad Solidaria</h2>
+                <p>En un significativo gesto de apoyo el diplomado en Gestión de Territorios Asociativos Solidarios recibimos un equipo como reconocimiento al compromiso y esfuerzo en el programa formativo. Esta herramienta tecnológica se convierte en un recurso vital para realizar diversas actividades tecnológicas, facilitando el acceso y manejo de información, así como la creación de contenidos digitales.La entrega de este equipo representa un paso importante hacia el fortalecimiento tecnológico.</p>
+                    <div class="news-images">
+                        <img src="../img/notice2img1.jpeg" alt="Noticia 2 Imagen 1">
+                        <img src="../img/notice2img2.jpeg" alt="Noticia 2 Imagen 2">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div id="productos-footer"></div>
+
+    <script>
+        $(function(){
+            $("#productos-footer").load("footer.html #mi-footer", function() {
+                // Ejecutar cualquier script que dependa del contenido cargado
+                const menuIcon = document.getElementById('menu-icon');
+                const navMenu = document.getElementById('nav-menu');
+                
+                menuIcon.addEventListener('click', function() {
+                    navMenu.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
